@@ -1,8 +1,10 @@
 {
   "name": "iclipboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manipulate clipboard anywhere",
-  "main": "lib/index.js",
+  "main": "cjs/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/index.js",
   "scripts": {
     "build:esm": "tsc --outDir esm --declaration --module esnext",
     "build:cjs": "tsc --outDir cjs --module commonjs",
